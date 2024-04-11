@@ -1,9 +1,7 @@
 const { Server } = require("socket.io");
 
 const io = new Server(8000, {
-  cors:{
-    origin:"https://velvety-florentine-eeb6d2.netlify.app"
-  },
+  cors:true,
 });
 
 const emailToSocketIdMap = new Map();
